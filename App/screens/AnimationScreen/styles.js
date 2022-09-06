@@ -2,7 +2,6 @@ import { StyleSheet, Dimensions } from 'react-native';
 
 const { width, height } = Dimensions.get('window')
 const ITEM_SIZE = width * 0.38;
-const ITEM_SPACING = (width - ITEM_SIZE) / 2;
 
 const colors = {
     black: '#323F4E',
@@ -11,8 +10,6 @@ const colors = {
 };
 
 export const styles = StyleSheet.create({
-
-
     container: {
         flex: 1,
         backgroundColor: colors.black,
@@ -32,7 +29,6 @@ export const styles = StyleSheet.create({
     },
     roundButtonText: {
         fontSize: 20,
-
     },
     TextView: {
         position: 'absolute',
@@ -41,7 +37,6 @@ export const styles = StyleSheet.create({
         right: 0,
         flex: 1
     },
-
     text: {
         fontSize: ITEM_SIZE * 0.8,
         fontFamily: 'Menlo',
@@ -53,10 +48,5 @@ export const styles = StyleSheet.create({
         justifyContent: 'center',
         alignItems: 'center'
     }
-
-
-
-
-
 })
 

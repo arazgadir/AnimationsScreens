@@ -21,11 +21,9 @@ export const Header = () => {
                 style={styles.BackPress} >
                 <BackButton />
             </Pressable>
-            <View >
-                <Text style={styles.titleText}> Create new post</Text>
+            <View  >
+                <Text style={styles.titleText}>Edit Profile</Text>
             </View>
         </View>
     )
 }
-
-export default Header

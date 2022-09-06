@@ -44,7 +44,6 @@ export const styles = StyleSheet.create({
         paddingTop: 10,
     },
     descriptInput: {
-        // height: 100,
         marginBottom: 20,
         width: '90%',
         padding: 10,

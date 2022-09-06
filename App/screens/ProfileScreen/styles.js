@@ -3,33 +3,57 @@ import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container: {
         flex: 1,
-        // alignItems: 'center',
-        // backgroundColor: '#323F4E',
         backgroundColor: '#FFFFFF',
         paddingHorizontal: 15,
         top: '5%'
     },
     photoView: {
-        height: '15%',
+        height: 80,
         width: '26%',
         backgroundColor: '#F2F3F3',
-        borderRadius: 55,
+        borderRadius: 10,
         justifyContent: 'center',
         alignItems: 'center',
-        margin: 10
     },
     nameSurname: {
-marginVertical: 20,
-left: 20,
+        marginVertical: 20,
+        left: 20,
     },
-    profileInfoView : {
-        flex: 1,
+    name: {
+        fontSize: 30,
+        fontWeight: '900',
+        color: '#333333'
+    },
+    position: {
+        fontSize: 16,
+        fontWeight: '400'
+    },
+    profileInfoView: {
         flexDirection: 'row',
-         backgroundColor: 'yellow',
-        //  height: 50
-        paddingVertical: 50
-         
-         
-    }
+        paddingVertical: 20,
+    },
+    edit: {
+        backgroundColor: '#0071D8',
+        justifyContent: 'center',
+        alignItems: 'center',
+        width: '50%',
+        paddingVertical: 20,
+        borderRadius: 10,
+        position: 'absolute',
+        bottom: 60,
+        alignSelf: 'center'
+    },
    
+    detailText: {
+        fontSize: 18,
+        fontWeight: '600',
+        marginVertical: 10,
+        backgroundColor: '#EAEDED',
+        paddingVertical: 30,
+        borderRadius: 10,
+        paddingLeft: 20,
+
+    }
+
+
 })

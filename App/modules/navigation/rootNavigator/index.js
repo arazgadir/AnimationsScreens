@@ -6,7 +6,6 @@ import BottomTabNavigator from '../tabNavigator';
 const Stack = createNativeStackNavigator();
 
 const RootNavigator = ()  => (
-
     <NavigationContainer>
         <Stack.Navigator>
             <Stack.Group  screenOptions={{ headerShown: false }} >

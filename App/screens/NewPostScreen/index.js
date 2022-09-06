@@ -32,7 +32,6 @@ export const CreatePostScreen = () => {
     const [title, setTitle] = React.useState("");
     const [description, setDescription] = React.useState("");
     const [status, setStatus] = useState('select');
-
     const [open, setOpen] = useState(false);
     const [items, setItems] = useState([
         { label: 'Draft', value: 'Draft' },
@@ -46,7 +45,6 @@ export const CreatePostScreen = () => {
             height: 400,
             cropping: true
         }).then(image => {
-            console.log(image);
             setImage(image.path)
         });
     }

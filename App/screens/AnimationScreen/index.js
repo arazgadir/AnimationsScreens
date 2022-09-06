@@ -1,7 +1,6 @@
 import React, { useRef, useState, useCallback } from 'react';
-import { View, Text, Vibration, StatusBar, Easing, TextInput, Dimensions, Animated, TouchableOpacity, FlatList, StyleSheet } from 'react-native';
+import { View, Text, StatusBar, Dimensions, Animated, TouchableOpacity, StyleSheet } from 'react-native';
 import { styles } from './styles';
-
 
 const { width, height } = Dimensions.get('window')
 
@@ -20,7 +19,6 @@ export const AnimationScreen = () => {
     const timerAnimation = useRef(new Animated.Value(height)).current
     const [duration, setDuration] = useState(timers[0])
     const animation = useCallback(()=> {
-        console.log('animation fn')
         Animated.sequence([
             Animated.timing(timerAnimation, {
                 toValue: 0,
@@ -106,7 +104,6 @@ export const AnimationScreen = () => {
                     decelerationRate='fast'
                 />
             </View>
-
         </View>
     )
 }
